@@ -3,12 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Imie Nazwisko (00000) - PTW LAB B</title>
+    <title>Jan Bejnar (57795) - PTW LAB B</title>
 
     <link rel="stylesheet" href="styles.css" type="text/css">
     <script src="scripts.js" defer></script>
 </head>
 <body>
+
+<main class="container">
+    <h1>Lista TODO</h1>
+
+    <section class="search-section">
+        <label for="search">Wyszukaj zadanie:</label>
+        <input type="text" id="search" placeholder="Wpisz frazę...">
+    </section>
+
+    <section class="list-section">
+        <h2>Moje zadania</h2>
+
+        <ul id="todo-list">
+            <li class="todo-item">
+                <span class="task-text">Zrobić zakupy</span>
+                <span class="task-date">2026-04-05 18:00</span>
+                <button type="button" class="delete-btn">Usuń</button>
+            </li>
+
+            <li class="todo-item">
+                <span class="task-text">Napisać sprawozdanie</span>
+                <span class="task-date">2026-04-06 20:00</span>
+                <button type="button" class="delete-btn">Usuń</button>
+            </li>
+
+            <li class="todo-item">
+                <span class="task-text">Posprzątać biurko</span>
+                <span class="task-date">2026-04-07 15:30</span>
+                <button type="button" class="delete-btn">Usuń</button>
+            </li>
+        </ul>
+    </section>
+
+    <section class="add-section">
+        <h2>Dodaj nowe zadanie</h2>
+
+        <label for="new-task">Treść zadania:</label>
+        <input type="text" id="new-task" placeholder="Wpisz nowe zadanie">
+
+        <label for="due-date">Termin wykonania:</label>
+        <input type="datetime-local" id="due-date">
+
+        <button type="button" id="add-btn">Dodaj zadanie</button>
+    </section>
+</main>
 
 </body>
 </html>
