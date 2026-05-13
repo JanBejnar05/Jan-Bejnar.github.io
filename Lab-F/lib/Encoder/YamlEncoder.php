@@ -11,7 +11,6 @@ class YamlEncoder implements EncoderInterface {
             return [];
         }
 
-        // Funkcja yaml_parse zwraca tablicę lub false w przypadku błędu
         $decoded = yaml_parse($data);
 
         return is_array($decoded) ? $decoded : [];
@@ -22,7 +21,6 @@ class YamlEncoder implements EncoderInterface {
             return '';
         }
 
-        // yaml_emit generuje gotowy ciąg znaków YAML
         return yaml_emit($data, YAML_UTF8_ENCODING);
     }
 }
